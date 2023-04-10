@@ -19,5 +19,5 @@ services:
     depends_on:
       - database
     restart: on-failure
-  volumes:
-  data:
+volumes:
+ data:
