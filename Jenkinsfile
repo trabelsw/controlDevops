@@ -11,11 +11,6 @@ pipeline {
                git branch: 'faresesghayer', url: 'https://github.com/trabelsw/controlDevops.git'
             }
         }
-         stage('tedst') {
-            steps {
-              echo "success"
-            }
-        }
         stage ('maven clean') {
             steps {
                 sh 'mvn clean package -e -X'
