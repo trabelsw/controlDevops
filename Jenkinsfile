@@ -38,7 +38,7 @@ pipeline {
        }
        stage('Deploy to Nexus repo') {
             steps {
-                nexusArtifactUploader artifacts: [[artifactId: 'examenScrum', classifier: '', file: 'target/examenScrum-1.0.jar', type: 'jar']], credentialsId: '8b915797-9008-4dc7-9de9-239fe717d439', groupId: 'org.springframework.boot', nexusUrl: '192.168.141.25:8081/repository/maven-releases/', nexusVersion: 'nexus3', protocol: 'http', repository: 'nexus-deployment', version: '1.0'
+                nexusArtifactUploader artifacts: [[artifactId: 'examenScrum', classifier: '', file: 'target/examenScrum-1.0.jar', type: 'jar']], credentialsId: '8b915797-9008-4dc7-9de9-239fe717d439', groupId: 'org.springframework.boot', nexusUrl: '192.168..19.25:8081/repository/maven-releases/', nexusVersion: 'nexus3', protocol: 'http', repository: 'nexus-deployment', version: '1.0'
             }
         }
         stage("docker build") {
