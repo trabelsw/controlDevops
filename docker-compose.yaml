@@ -12,7 +12,7 @@ services:
       - 3306:3306
 
   spring-boot:
-    image: faressghayer/validationdevops:1
+    image: faressghayer/validationdevops:18
     container_name: examen-scrum
     ports:
       - 8089:8089
