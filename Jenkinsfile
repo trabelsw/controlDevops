@@ -1,6 +1,6 @@
 pipeline {
     environment{
-    registry="faressghayer/validationcntrldevops"
+    registry="faressghayer/validationdevops"
     registryCredential="ea9acee5-4575-467b-8ace-764d9d54880e"
     dokerImage="examenscrum"
     }
