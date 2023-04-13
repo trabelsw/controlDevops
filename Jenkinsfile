@@ -67,6 +67,12 @@ pipeline {
                 sh 'docker-compose up -d'
             }
         }
+         stage('sonar') {
+            steps{
+         sh 'mvn sonar:sonar \
+  -Dsonar.projectKey=devops \
+  -Dsonar.host.url=http://192.168.19.25:9000 \
+  -Dsonar.login=bd6c0a58f58f4b931de793eef0c5049d8cd2d849'
         
     }
 }
