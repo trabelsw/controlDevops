@@ -17,19 +17,7 @@
         <java.version>1.8</java.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
     </properties>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>simpleapp-release</id>
-			<name>simpleapp-release</name>
-			<url>http://192.168.1.29:8081/repository/simpleapp-release</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+
 	
 	
     <dependencies>
