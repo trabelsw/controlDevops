@@ -2,7 +2,7 @@ version: '3.3'
 services:
   database:
     image: mysql:5.7
-    container_name: examen-scrum
+    container_name: examen-scrum-database
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: examen-scrum
@@ -13,7 +13,7 @@ services:
 
   spring-boot:
     image: faressghayer/validationdevops:18
-    container_name: examen-scrum
+    container_name: examen-scrum-backend
     ports:
       - 8089:8089
     depends_on:
