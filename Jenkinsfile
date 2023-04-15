@@ -30,13 +30,13 @@ pipeline {
                   echo 'unit tests stage done'
             }
         }
-         stage('sonar') {
-            steps{
-          sh 'mvn sonar:sonar \
-                -Dsonar.projectKey=devop \
-                -Dsonar.host.url=http://192.168.19.25:9000 \
-                -Dsonar.login=0fe0c0aa38e5a86ed60d456a5c784756dcc00422'
-                 }
+         //stage('sonar') {
+            //steps{
+          //sh 'mvn sonar:sonar \
+                //-Dsonar.projectKey=devop \
+                //-Dsonar.host.url=http://192.168.19.25:9000 \
+                //-Dsonar.login=0fe0c0aa38e5a86ed60d456a5c784756dcc00422'
+                 //}
               }
          
         stage('maven package') {
