@@ -30,14 +30,14 @@ pipeline {
                   echo 'unit tests stage done'
             }
         }
-        // stage('sonar') {
-            //steps{
-          //sh 'mvn sonar:sonar \
-              //-Dsonar.projectKey=fares \
-                //-Dsonar.host.url=http://192.168.19.25:9000 \
-               // -Dsonar.login=80e3266f44ae404c6235635ecd766e93c31fde10'
+        //stage('sonar') {
+          // steps{
+      // sh 'mvn sonar:sonar \
+             // -Dsonar.projectKey=fares \
+             //  -Dsonar.host.url=http://192.168.19.25:9000 \
+              //  -Dsonar.login=80e3266f44ae404c6235635ecd766e93c31fde10'
                 // }
-              //}
+            //  }
          
         stage('maven package') {
              steps {
